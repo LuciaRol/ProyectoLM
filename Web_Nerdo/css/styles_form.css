@@ -1,0 +1,270 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+@font-face{
+    font-family: 'Aclonica';
+    src: url(../fuentes/Aclonica-Regular.ttf);
+}
+
+:root{
+    --azulVerdoso: #20a3d8;
+    --turquesa: #1ab2b9;
+    --turquesaClaro: #a3e7eb;
+    --moco: #b3daa1;
+    --mocoClaro: #e9ffdf90;
+    --arena: #f8e5bb;
+    --arenaClaro: #faeed2;
+    --cuarzoRosa: #f8ebea;
+    --gris: #333;
+    --textoPrincipal: 'Robot', sans-serif;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: var(--gris);
+    font-family: var(--textoPrincipal);
+    background-color: var(--arenaClaro);
+    background-image: url(../img/fondoClaro3.png);
+    background-size: 152px;
+    background-repeat:repeat;
+    background-attachment: scroll;
+    z-index: 0;
+}
+
+#menu{
+    background-color: var(--turquesaClaro);
+    width: 100%;
+    font-family: var(--textoPrincipal);
+    position:fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    height: 65px;
+    border-bottom: 1px solid var(--turquesa);
+    box-shadow: 0 0 10px 0 var(--gris);
+}
+
+
+/** MENÚ DESPLEGABLE */
+
+header div{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    margin-top: 15px;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    position: fixed;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul a{
+    display:block;
+    color: var(--gris);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18 px;
+    line-height: 32 px;
+    padding:0 15px;
+    font-family: var(--textoPrincipal);
+}
+
+nav ul li{
+    background-color: var(--turquesaClaro);
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    border-right: 1.5px solid var(--turquesa);                     
+}
+
+#dado{
+    width: 10px;
+    height: 10px;
+    border: none;
+    margin-top: -10px;
+}
+
+#dado:hover{
+    zoom: 105%;
+    background-color: var(--turquesaClaro);
+}
+
+#hazte_socio {
+    background-color: var(--arena);
+    border: 1.5px dotted var(--turquesa);
+    border-radius: 15px;
+    margin-left: 950px;
+    
+}
+
+#hazte_socio:hover{
+    background-color: var(--arenaClaro);
+}
+
+#hazte_socio a:hover{
+    color: var(--turquesa);
+}
+
+nav ul li:hover{
+    background-color: var(--turquesa);
+}    
+
+nav ul li a:hover{
+    color: var(--arenaClaro);
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: var(--turquesaClaro);
+    padding: 5px;
+}
+
+nav ul ul li{
+    background-color: var(--turquesaClaro);
+    border-top: 1.5px solid var(--turquesa);
+    border-left: none;
+    border-right: none;
+    float: none;
+    width: 200px;
+}
+
+nav ul ul a{
+    line-height: 120%;
+    padding: 0 18px;
+}
+
+nav ul ul ul{
+    top: 0;
+    left: 100%;
+}
+
+nav ul li:hover > ul{
+    background-color: var(--turquesaClaro);
+    display: block;
+}
+
+/** FOOTER */
+
+footer{
+    color: white;
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    background-color: var(--turquesaClaro);
+    box-shadow: 0 0 5px 2px var(--gris);   
+    display: block;         
+}
+
+footer table caption{
+    font-family: 'Aclonica', sans-serif;
+}
+
+footer table tr td{
+    background-color: white;
+    border-radius: 90px;
+    float: left;
+}
+
+footer p{
+    margin-right: 20px;
+    float: right;
+}
+
+footer a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/** MAIN */
+/** formulario*/
+
+h3 {
+    color:var(--gris);
+    font-family: 'Aclonica', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 10px;
+
+}
+
+#hecho {
+    background-color: var(--arena);
+    border: 1.5px dotted var(--turquesa);
+    border-radius: 10px;
+    align-self: center;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+#hecho:hover{
+    background-color: var(--arenaClaro);
+    color: var(--turquesa);
+}
+
+form{
+    margin-top: 8%;
+    margin-bottom: 5%;
+    padding: 30px;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+form p{
+    display: flex;
+    margin-left: 40%;
+}
+
+::placeholder {
+    color: var(--gris);
+}
+
+label {
+    padding: 5px;
+    position: absolute;
+    color: transparent;
+    font-size: 16px;
+    transition: 1s;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    z-index: 0;
+}
+
+input:focus {
+    border: 2px solid var(--turquesa);
+}
+
+textarea{
+    width: 40%;
+}
+
+
+

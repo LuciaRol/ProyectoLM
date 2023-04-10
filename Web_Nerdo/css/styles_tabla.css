@@ -1,0 +1,100 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+@import url(https://fonts.google.com/specimen/Sedgwick+Ave+Display);
+
+@font-face{
+    font-family: 'Aclonica';
+    src: url(../fuentes/Aclonica-Regular.ttf);
+}
+
+:root{
+    --azulVerdoso: #20a3d8;
+    --turquesa: #1ab2b9;
+    --turquesaClaro: #a3e7eb;
+    --moco: #b3daa1;
+    --mocoClaro: #e9ffdf90;
+    --arena: #f8e5bb;
+    --arenaClaro: #faeed2;
+    --cuarzoRosa: #f8ebea;
+    --gris: #333;
+    --textoPrincipal: 'Roboto', sans-serif;
+    --letra: 'Sedwgwick Ave Display', serif;
+
+}
+
+article{
+    text-align: center;
+}
+
+article h3{
+    color: var(--gris);
+    font-style: var(--textoPrincipal), sans-serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+
+#tabla{
+    border: 1px solid var(--gris);
+    font-size: 1.4em;
+    align-self: center;
+    margin-left: 25%;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+    box-shadow: 0px 50px 100px -20px var(--gris) , 
+                0px 30px 60px -30px var(--gris), 
+                0px -2px 6px 0px inset var(--gris);  
+}
+
+#tabla caption{
+    border: 1px solid var(--gris);
+    border-bottom: none;
+    background-color: whitesmoke;
+    padding: 10px;
+    box-shadow: 0px 50px 100px -20px var(--gris) , 
+                0px 30px 60px -30px var(--gris), 
+                0px -2px 6px 0px inset var(--gris);
+    
+}
+
+#tabla tr td {
+    border: 1px solid var(--gris);
+    padding: 10px;
+             
+}
+
+#tabla tr th {
+    border: 1px solid var(--gris);
+    padding: 10px;
+}
+
+#tabla .titulos{
+    background-color: var(--turquesa);
+    color: var(--arenaClaro);
+}
+
+#ala{
+    width: 70px !important;
+    height: 50px !important;
+    border-radius: 5px; 
+}
+
+#texto{
+    width: 40%;
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: var(--turquesaClaro) 0px 50px 100px -20px, var(--gris) 0px 30px 60px -30px;
+
+}
+
+.primeraletra::first-letter{
+    background-color: var(--turquesaClaro);
+    box-shadow: 0px 50px 100px -20px var(--gris) , 
+                0px 30px 60px -30px var(--gris), 
+                0px -2px 6px 0px inset var(--gris);
+    color:var(--gris);
+    padding: 10px;
+    border-radius: 50px;
+    align-self: baseline;
+    font-family: var(--letra);
+}
